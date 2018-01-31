@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+
+    android:paddingBottom="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_hospitality"
+    android:background="@drawable/login_background"
+    tools:context=".Hospitality">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="NEED AN ACCOMODATION??? DONT WORRY!!!:-"
+            android:id="@+id/hospitality1"
+            android:textSize="20dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            />
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:id="@+id/hospitality2"
+                android:textAlignment="gravity"
+                android:text="@string/hospitality1"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Facilities and Services:-"
+                android:id="@+id/hospitality3"
+                android:paddingTop="10dp"
+                android:textSize="20dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                />
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/hospitality4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+
+                android:text="@string/hospitality2"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/hospitality5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Acomodation Rules:-"
+                android:paddingTop="10dp"
+                android:textSize="20dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                />
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/hospitality6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:text="1. Accomodation Charges : "/>
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/hospitality7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:text="per student rupees 80 /-"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/hospitality8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:text="2. CHECK IN TIMING : "/>
+                <TextView
+                    android:id="@+id/hospitality9"
+                    android:paddingTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:text="from 6.00 pm onwards"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/hospitality10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:text="3. CHECK OUT TIMING : "/>
+                <TextView
+                    android:id="@+id/hospitality11"
+                    android:paddingTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:text=" up to 6.00 pm on next day after check in."
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/hospitality12"
+                android:paddingTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+
+                android:text="@string/hospitality3note"
+                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/hospitality13"
+                    android:paddingTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:text="@string/hospitality4"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/hospitality14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="5. DAMAGE TO PROPERTY : "/>
+                <TextView
+                    android:id="@+id/hospitality15"
+                    android:paddingTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:text="@string/hospitality55"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/hospitality16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/hospitality6"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/hospitality17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="7. Amedment of Rules : "/>
+            <TextView
+                android:id="@+id/hospitality18"
+                android:paddingTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+
+                android:text="@string/hospitality7"
+                android:textSize="15dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/hospitality20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Contact:-  "/>
+            <TextView
+                android:id="@+id/santosh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"
+                android:onClick="call"
+                android:background="@drawable/active_background"
+                android:text="Shubham Andhare\n 848 484 9013"/>
+
+
+
+
+
+        </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#bfb9b9"
+                android:textColor="#1e1d1d"
+                android:layout_height="wrap_content"
+                android:onClick="call"
+                android:text="Call"
+                android:textSize="20dp"
+                android:layout_margin="15dp"
+               />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:background="@drawable/login_background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".staff"
+    tools:showIn="@layout/app_bar_staff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/pc1"
+        android:textColor="#FFF"
+        android:padding="5dp"
+        android:textSize="19dp"
+        android:text="'You will never win if you never begin'"
+        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc8"
+                android:textColor="#FFF"
+
+                android:textSize="15dp"
+                android:text="- Helen Rowland"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc2"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text="@string/pcup1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc3"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="19dp"
+                android:text="STRUCTURE"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc4"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text="1)Participation points:
+Show up your technical expertise by participating in the various mind boggling events and in a way contributing for your
+college as well !"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc5"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text="2)Team Events:
+Build up your college team and enter into the final series of competitions for the ultimate hunt of the cup !!"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc6"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text="PREVIOUS CHAMPIONS
+
+2012 – Prof. Ram Meghe Institute of Technology, Amravati.
+2013 – Sipna College of Engineering and Technology, Amravati.
+2014 – Sipna College of Engineering and Technology, Amravati."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/pc7"
+                android:textColor="#FFF"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text=""
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

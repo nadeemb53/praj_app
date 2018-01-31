@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:background="#000a12"
+       >
+
+   <!-- <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.bla.bla.BlurAndDimView
+            android:id="@+id/blurrer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:visibility="invisible" />
+
+        <ListView
+            android:id="@+id/menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice" />
+    </android.support.v4.widget.DrawerLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:paddingBottom="0dp"
+            android:background="#000a12"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingTop="60dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/grpicon" android:id="@+id/imageView"
+                    android:textAlignment="textStart"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/loggedInLayout">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name "
+                                android:textSize="18dp"
+                                android:textColor="#eeeeee"
+                                android:textStyle="bold"
+                                android:id="@+id/name"
+                                android:textAlignment="textStart"
+                                android:layout_marginRight="5dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Surname"
+                                android:textSize="18dp"
+                                android:textColor="#eeeeee"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:id="@+id/lastname"
+                                />
+
+
+                        </LinearLayout>
+                        <!--<TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="name"
+                            android:textSize="12dp"
+                            android:textColor="#eeeeee"
+                            android:id="@+id/email"
+                            android:textAlignment="textEnd"/>-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginRight="50dp"
+                            android:text="Logout"
+                            android:textSize="13dp"
+                            android:textStyle="italic"
+                            android:textColor="#eeeeee"
+                            android:id="@+id/logout"
+                            android:onClick="navigation"
+                            android:textAlignment="textEnd"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/notLoggedInLayout"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Login/Signup"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            android:textColor="#eeeeee"
+                            android:id="@+id/login"
+                            android:layout_gravity="start"
+                            android:onClick="navigation"
+                            android:textAlignment="textEnd"/>
+                        <!--<ImageButton
+
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/logout"
+                            android:id="@+id/login"
+                            android:onClick="navigation"
+                            android:layout_marginLeft="200dp"
+                            android:layout_weight="0.01" />-->
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="#000a12"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:orientation="vertical"
+                    >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/timer"
+                        android:paddingTop="0dp"
+
+                        android:textAlignment="center"
+                        android:textColor="#eeeeee"
+                        android:layout_gravity="center"
+                        android:textSize="28dp"
+                        android:text="DD:HH:MM:SS"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:text="DD"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:id="@+id/t1"
+                        android:layout_below="@+id/timer"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:text="HH"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:id="@+id/t2"
+                        android:layout_below="@+id/timer"
+                        android:layout_toEndOf="@+id/t1" />
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:text="MM"
+                        android:layout_toEndOf="@+id/t2"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/timer"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/t3"/>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:text="SS"
+                        android:layout_toEndOf="@+id/t3"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/timer"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="false" />
+
+                </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp"
+                android:id="@+id/sin">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/home"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_home"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Home"
+                    android:layout_gravity="center"
+                    android:onClick="navigation"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_home"
+                    android:textColor="#eeeeee"
+                    android:background="#000a12"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/eve"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_events"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Events"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_events"
+                    android:textColor="#eeeeee"
+                    android:onClick="navigation"
+                    android:background="@drawable/active_background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/nav_music"
+                    android:onClick="navigation"
+                    android:id="@+id/music"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Theme Song"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_music"
+                    android:textColor="#eeeeee"
+                    android:onClick="navigation"
+                    android:background="@drawable/active_background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:onClick="navigation"
+                    android:src="@drawable/repairs_workshop"
+                    android:id="@+id/inav_Workshop"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="Workshop"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_Workshop"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/si"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_Initiative"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="Social Initiative"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_Initiative"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/t"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_Techweek"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="Tech Week"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_Techweek"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/pcupi"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_pcup"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="Prajwalan Cup"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_pcup"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/soc"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_contest"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="Social Contest"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_contest"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:onClick="navigation"
+                    android:src="@drawable/bulb"
+                    android:id="@+id/inav_myidea"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="My !dea My Event"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_myidea"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/tshirt"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_shirt"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Buy Prajwalan T-shirt"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_shirt"
+                    android:onClick="navigation"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gallery"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_gallary"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Gallery"
+                    android:layout_gravity="center"
+                    android:onClick="navigation"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_gallary"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/g2lc"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_g2lc"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="G2LC"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_g2lc"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/hospi"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_hospitality"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="Hospitality"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_hospitality"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/about"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_about"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="About Us"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:onClick="navigation"
+                    android:id="@+id/nav_about"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/princi"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_princi"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Principal's Desk"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:onClick="navigation"
+                    android:id="@+id/nav_princi"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+           <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/about"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_staff"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Staff Incharge"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:onClick="navigation"
+                    android:id="@+id/nav_staff"
+                    android:textColor="#363636"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/sponsors"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_sponsors"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="Sponsors"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_sponsors"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/cont"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_contact"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:onClick="navigation"
+                    android:paddingLeft="10dp"
+                    android:text="Contact Us"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_contact"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/developer"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_developer"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:text="Developers"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_developer"
+                    android:onClick="navigation"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:background="#000a12">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Connect With "
+                android:textColor="#eeeeee"
+                android:textAlignment="viewEnd"
+                android:id="@+id/nav_s"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Prajwalan"
+                android:textAlignment="viewStart"
+                android:textColor="#eeeeee"
+                android:id="@+id/nav_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:background="#000a12"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="navigation"
+                android:src="@drawable/what"
+                android:id="@+id/iwhatt"
+                android:background="@drawable/active_background"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="navigation"
+                android:src="@drawable/fb"
+                android:id="@+id/fb"
+                android:background="@drawable/active_background"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="navigation"
+                android:src="@drawable/insta"
+                android:id="@+id/iinsta"
+                android:background="@drawable/active_background"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="navigation"
+                android:src="@drawable/twitter"
+                android:id="@+id/itwit"
+                android:background="@drawable/active_background"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/yt"
+                android:onClick="navigation"
+                android:id="@+id/iyt"
+                android:background="@drawable/active_background"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="navigation"
+                android:src="@drawable/linkedin"
+                android:id="@+id/ilink"
+                android:background="@drawable/active_background"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="www.prajwalan.org"
+            android:textSize="10dp"
+            android:textColor="#eeeeee"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:id="@+id/nav_url1"
+            android:backgroundTint="#000a12"
+
+            android:clickable="true"
+            android:onClick="navigation"
+            android:background="@drawable/active_background"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

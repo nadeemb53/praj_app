@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/app_bar_workshop2" tools:context=".workshop2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#FAFAFA"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/workshop_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/workshop"/>
+                    <ProgressBar
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:indeterminate="true"
+                        android:id="@+id/load"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FAFAFA"
+                    android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/workshop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Workshop Name"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/workshop_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Workshop Desc"
+                        android:textSize="14dp"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FAFAFA">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Details"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#000"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FAFAFA"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/heading2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:text="Date : "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/workshop_date"
+                        android:textColor="#222"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FAFAFA"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/heading3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:text="Duration : "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#222"
+                        android:id="@+id/workshop_duration"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FAFAFA"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/heading4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:text="Venue : "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textSize="16dp"
+                        android:id="@+id/workshop_venue"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FAFAFA"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/heading5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:text="Fees : "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textSize="16dp"
+                        android:id="@+id/workshop_fees"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/heading6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Information"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/workshop_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#222"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FAFAFA">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/heading7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Contents"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#000"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:id="@+id/workshop_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FAFAFA">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/heading8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Contacts"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#000"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mail Us At :\n outreach@prajwalan.org "
+                    android:id="@+id/mailText"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mail"
+                    android:textColor="#222"
+                    android:textSize="15dp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:text="Convenor:\n Shreya SAWARKAR\n +918007960483\n Convenor:\n Shubham NIMBOKAR\n +917249834052" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#bfb9b9"
+                    android:textColor="#1e1d1d"
+                    android:layout_height="wrap_content"
+                    android:onClick="call"
+                    android:text="Call"
+                    android:textSize="20dp"
+                    android:layout_margin="15dp"
+                    android:layout_below="@+id/tshirtla"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

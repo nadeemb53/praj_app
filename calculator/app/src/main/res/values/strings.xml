@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="title_activity_toast">toast</string>
+    <string name="title_activity_intnentdata">intnentdata</string>
+    <string name="title_activity_intentdatareceiver">intentdatareceiver</string>
+</resources>

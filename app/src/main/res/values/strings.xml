@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Prajwalan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_bewith">bewith</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_social">Social</string>
+    <string name="title_activity_workshop">Workshop</string>
+    <string name="title_activity_amusement">Amusement</string>
+    <string name="title_activity_coding">Coding</string>
+    <string name="title_activity_conferal">Conferal</string>
+    <string name="title_activity_pardigm">Pardigm</string>
+    <string name="title_activity_robotics">Robotics</string>
+    <string name="title_activity_angribird">Angribird</string>
+    <string name="title_activity_googler">Googler</string>
+    <string name="title_activity_junkart">Junkart</string>
+    <string name="title_activity_lan">Lan</string>
+    <string name="title_activity_cadstrife">Cadstrife</string>
+    <string name="title_activity_circuit">Circuit</string>
+    <string name="title_activity_codefrenzy">Codefrenzy</string>
+    <string name="title_activity_encipher">Encipher</string>
+    <string name="title_activity_trussmaze">Trussmaze</string>
+    <string name="title_activity_enterprenaur">Enterprenaur</string>
+    <string name="title_activity_pp">Paper Presentation</string>
+    <string name="title_activity_virtualstock">Virtual stock</string>
+    <string name="title_activity_contraption">Contraption</string>
+    <string name="title_activity_greenbuilding">Greenbuilding</string>
+    <string name="title_activity_junkward">Junkward</string>
+    <string name="title_activity_modfusion">Modfusion</string>
+    <string name="title_activity_deathrace">Deathrace</string>
+    <string name="title_activity_linefollower">Linefollower</string>
+    <string name="title_activity_robosoccer">Robosoccer</string>
+
+    <string name="title_activity_splash">splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_information">information</string>
+    <string name="title_activity_fees">fees</string>
+    <string name="title_activity_rules">Rules</string>
+    <string name="title_activity_contacts">contacts</string>
+    <string-array name="tabs">
+        <item>Information</item>
+        <item>Rules</item>
+        <item>Fees</item>
+        <item>Contacts</item>
+    </string-array>
+    <string-array name="navigation">
+        <item>Home</item>
+        <item>Events</item>
+        <item>Workshops</item>
+        <item>Social Initiatives</item>
+        <item>Tech Week</item>
+        <item>Social Contest</item>
+        <item>My !dea My Event</item>
+        <item>Buy Prajwalan T-shirt</item>
+        <item>Gallary</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_gallery_demo">GalleryDemoActivity</string>
+    <string name="title_activity_g2lc">g2lc</string>
+    <string name="g2lc_info1"><p>We feel glad to present before you our own social cell g2lc with a goal of "Shaping a Better Society". It was formed in 2011 with a mission to evolve as the center of philanthropic activities, providing basic amenities and education to all the needy children thus creating sustainable manpower for the all round development of our nation. We wish to work collectively for social welfare of the nation and give our best management and technical efforts in eradicating illiteracy from the society and preserving our ecological beauty, thus making the country developed in real sense. g2lc formed its three sub cells</p></string>
+    <string name="g2lc_info2"><p>Remember "A candle loses nothing if it is used to light the other one"</p></string>
+    <string name="g2lc_activity1">1. AMC school visits every Saturday.\n2.Guidance seminar for UPSC/MPSC aspirants.\n3.Orphanage visits on the occasion of Rakshabandhan and New Year.\n4.Celebrated "Youth Week" on the occasion of 152nd Birth Anniversary of Swami Vivekanand.</string>
+    <string name="g2lc_activity2">In that various events were -\nα. Blood Donation Camp with record count of 245 donors (Girls also participated equally).\nβ. Self-Defence Workshop for girls.\nϒ. Silent March, Exhibition on the life of Swami Vivekanand and Book Exhibition.\nAnd many more..</string>
+    <string name="g2lc_helping1">1) Students of GCOEA\n2) Staff members\n3) Prajwalan Team\n4) Alumni Association</string>
+    <string name="g2lc_final"><p>How can you too become our helping hand? You can contribute your new social ideas, time or money so that we together can light a candle in the darkness of society. </p></string>
+    <string name="title_activity_hospitality">Hospitality</string>
+    <string name="hospitality1"><p>For the purpose of accommodation of students from outside of Amravati including both girls and boys, college hostel is available for accommodation. Since there is no option for accommodation nearby the college hence college decided to provide accommodation facility to students from outside Amravati in college hostels. The hostels are in college campus itself, so no need travel for long distances plus there will be no inconvenience for participants regarding event timings.</p></string>
+    <string name="hospitality2">1. Per candidate a set of Bed, Bed sheet, Pillow, Blanket will be provided.\n2. 24 hours supply of water for drinking and other purposes.\n3. Free Wi-Fi connection.\n4. Lunch and dinner will be provided in hostel mess with extra charge of rupees 30/- per person.
+\n5.First aid kit.</string>
+    <string name="hospitality3note">( NOTE : Occupant must have to vacate the room at 6.00 pm irrespective of its check in timing. Students staying beyond check out time will be charged for a full day succeeding their check out date and time.)</string>
+    <string name="hospitality4"><p>4. Students are particularly requested to lock the doors of their rooms when going out or when going to bed or when using common bathrooms. The hostel/college authorities will not in any way whatsoever, be responsible for the loss of student belongings or any other property.</p></string>
+    <string name="hospitality55"><p> Guests will be held responsible for any loss or damage to hostel property caused by themselves, their friends or any person for whom they are responsible</p></string>
+    <string name="hospitality6">6. SMOKING IS STRICTLY PROHIBITED in hostel and college premises.</string>
+    <string name="hospitality7"> The college/ hostel authorities reserves to itself the right to add to, to alter and to amend any of the above terms, conditions and rules.</string>
+    <string name="title_activity_workshop2">workshop2</string>
+    <string name="about_us1"><p>PRAJWALAN  is the annual science and technology festival of Government College of Engineering, Amravati.PRAJWALAN was started in 2006 with the aim to provide technical awareness among students and to develop a platform for the technocrats to showcase their talent. It has now become the National level technical festival of India with a footfall of around 15,000+ from all over the maharashtra.</p></string>
+    <string name="about_us2"><p>PRAJWALAN is a two day festival event in the month of February at Government College of Engineering, Maharashtra which attracts the people all over Maharashtra and Vidarbha including students,academia,corporates and the feneral public.</p></string>
+    <string name="about_us3"><p>The first edition of Prajwalan was in 2006 to ignite the minds of the students and Engineers.New events were launched in the first edition. In its early edition the fund to conduct the event was completely provided by the Institute.</p></string>
+    <string name="title_activity_tshirt">Tshirt</string>
+    <string name="title_activity_ideaevent">ideaevent</string>
+    <string name="title_activity_tweek">tweek</string>
+    <string name="title_activity_socialcontest">socialcontest</string>
+    <string name="title_activity_ievent">ievent</string>
+    <string name="title_activity_developer">developer</string>
+    <string name="social_contest1"><p>Facebook Competition is back again to bring something more qtiyatic which is Many Questions-and fun Competition-Fun Unlimited. The winners will get exciting gifts, goodies from Prajwalan sponsors, discount coupons and lot more.</p></string>
+    <string name="social_contest2"><p>1.Everyday a few question(s) will be posted on this page and you will have to comment your answers.\n2.winners will be chosen democratically.that is,comment with highest likes will be declared as winner.\n3.This page will have the authority to delete,remove any slang comment or to block any account.\n4.No cash prize will be there.gifts,goodies and discount coupons will be awarded to the winners.\n5.Winner will receive a message in his/her inbox and his/her name will be posted on this page along with the profile picture ,with his/her permission.</p></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pop">Pop</string>
+    <string name="title_activity_contact2">contact2</string>
+    <string name="title_activity_sponsor">sponsor</string>
+    <string name="title_activity_sponsor_main">sponsor_main</string>
+    <string name="title_activity_sponsors_2016">sponsors_2016</string>
+    <string name="title_activity_principal">principal</string>
+    <string name="princi_1">Govt. College of Engineering, Amravati, was established in the year 1964 by Govt. of Maharashtra. It was initially affiliated to Nagpur University and later on shifted to Amravati University in 1982. The Institute started with three basic disciplines i.e. Civil, Mechanical and Electrical Engg. Subsequently degree programs in Electronic and Telecommunication, Computer Science and Engineering, Instrumentation Engineering and Information Technology were added as per the demand and requirements of the country. The institute started part time post graduate course in Electrical Power Systems in 1986 and later added four P.G. Courses in Thermal Power Engineering, Environmental, Geotechnical, and Electronics Systems and Communication. The institute also offers seven full time PG programs in Electrical Power Systems, Structures, Thermal Power Engg., Environmental Engg., Advanced Electronics, Computer Engg., and Geotechnical Engg .</string>
+    <string name="princi_2">The institute is recognized research center for Ph.D. Programs in Civil, Mechanical, Electrical, Electronics and Computer Engg. of Amravati University.</string>
+    <string name="princi_3">On the basis of academic performance and contributions made by the institute and alumni, Government of Maharashtra has awarded autonomous status to the college from academic session 2006-2007. The Institute, therefore, design need based curriculum, conducts examination itself and declares the result. Results are normally declared within a week after the examination. The degree is awarded by Sant Gadge Baba Amravati University, Amravati, with a special mention of the College, in its convocation. The students are also encouraged for sports, extracurricular, and co curricular activities. Organizing Prajwalan is a regular feature of the institute. Students have demonstrated excellence in University sports.</string>
+    <string name="princi_4">College is administered by Board of Management under the chairman ship of Director of Technical Education (M.S.), the Senate, Examination Committee, and the Boards of Study. The different statutory bodies are displayed on website of institute.</string>
+    <string name="princi_5">College campus is spread over 105 acres of land on Amravati Walgaon road. Public Work Department is responsible for construction and maintenance of buildings. Every department has its own building, two boy\'s hostel and a girl\'s hostel. The institute has plans for five more department building of 9000 sq. m. area and two more hostels (for girls and boys each). College at present has 10 mbps connectivity having campus wide networking of 1000 nodes and also WiFi spread over entire campus covering all departments, hostels and residential area.</string>
+    <string name="princi_6">The college has participated in prestigious Canada India industry Institute Linkage Project (CIIILP). It was also selected under Technical Education Quality Improvement Program (TEQIP-I) of the Govt. of India for financial assistance for introducing academic reforms and for upgrading the infrastructure. In addition to this, the institute is regularly receiving funding from AICTE, and DST.</string>
+    <string name="princi_7">The intake quality of student is of very high merit. With dedicated efforts of faculty, the students have exhibited their talent and excelled in academics, co-curricular as well placement activities.</string>
+    <string name="princi_8">We are confident that we will achieve our dream of moving to the next level in a very short time....</string>
+    <string name="title_activity_staff">staff</string>
+    <string name="pcup1">Inviting the colleges to compete and defeat the opponents to win the coveted Prajwalan cup!
+Prajwalan cup is a section that pits your physical, technical, creative and artistic skills all together for the array of
+competitions . With no pre registrations and pre-requisites, enjoy the festive excitement and adrenaline gushing events.
+So join the rail and witness the vigorous clash of the deserving colleges for the most desired title of Prajwalan’15!!</string>
+    <string name="si1">1. Each team will consist of maximum 2 members.\n2. Entry fees for team is ₹60\n3. Topics for poster presentation will be related to social issues.\n4. Poster should be submitted one day before event.\n5. There will be exhibition of posters for two days of event (26th and 27th Feb\' 16)</string>
+    <string name="title_activity_sponsors_2017">sponsors_2017</string>
+    <string name="title_activity_music">music</string>
+</resources>

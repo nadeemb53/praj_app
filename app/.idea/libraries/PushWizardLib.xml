@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PushWizardLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/PushWizardLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

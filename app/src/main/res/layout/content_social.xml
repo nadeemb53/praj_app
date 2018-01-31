@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    android:background="@drawable/login_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_social" tools:context=".Social">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="17dp"
+        android:id="@+id/coming1"
+        android:padding="5dp"
+        android:text="(A social contribution of Techno geeks)\nGeneral Information:-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:id="@+id/coming2"
+                android:padding="5dp"
+                android:text="Social Initiative brings before you an great opportunity to express your feelings about your society and your nation.To show how socially active we engineers are "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:id="@+id/coming7"
+                android:padding="5dp"
+                android:text="\n1. POSTER EXHIBITION:-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:id="@+id/coming3"
+                android:padding="5dp"
+                android:text="
+You have to make posters and submit it to us till 8th March\n
+Theme of poster -' Techno Social'\n
+Participation fees -50₹ per team(Max 2 members in a team)\n
+A grand exhibition of your posters will be displayed"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:id="@+id/coming6"
+                android:padding="5dp"
+                android:text="\n2. STREET PLAY:-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:id="@+id/coming4"
+                android:padding="5dp"
+                android:text="
+Even a 'street play' will be performed by us, creating awareness
+on various social issues\n\n
+So please don't miss this chance as limited entries
+are available for poster exhibition..!!\n\n
+Participate and Get a chance to win exciting prizes"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:id="@+id/coming5"
+                android:padding="5dp"
+                android:text="\n\n
+Contact:\n
+Convener: Aishwarya Shinde(8421600273)\n
+Co-Convener: Shital Susatkar(8308764948)\n
+\n
+Rules :-\n
+1. Each team will consist of 2 members\n
+2.Entry fees per team is Rs. 50/-\n
+3. Theme 'Techno Social'\n
+4.Poster should be submitted one day before the event.\n
+5. There will be exhibition of posters for two days (9th and 10th march'17)"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "783483290495",
+    "firebase_url": "https://prajwalan-1223.firebaseio.com",
+    "project_id": "prajwalan-1223",
+    "storage_bucket": "prajwalan-1223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783483290495:android:f269816d560ed6bc",
+        "android_client_info": {
+          "package_name": "org.prajwalan.app.prajwalan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783483290495-9sp3k3r3bae0v89fu49255atq1fqk4r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV26U_lxdPogRQXQzRAhWul-sXGYeVJi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
