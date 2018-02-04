@@ -312,12 +312,13 @@
                     android:text="Theme Song"
                     android:layout_gravity="center"
                     android:layout_weight="2"
-                    android:id="@+id/nav_music"
+                    android:id="@+id/nav_theme_song"
                     android:textColor="#eeeeee"
                     android:onClick="navigation"
                     android:background="@drawable/active_background"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -395,7 +396,32 @@
                     android:textColor="#eeeeee"
                     android:background="@drawable/active_background"/>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
 
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/tedx1"
+                    android:onClick="navigation"
+                    android:id="@+id/tedx1"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="TEDxGCOEA"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_tedx"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+                </LinearLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -851,4 +877,3 @@
 
 
 </LinearLayout>
-

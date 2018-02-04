@@ -29,11 +29,13 @@ import org.prajwalan.app.prajwalan.Social;
 import org.prajwalan.app.prajwalan.Tshirt;
 import org.prajwalan.app.prajwalan.developer;
 
-import org.prajwalan.app.prajwalan.music;
+import org.prajwalan.app.prajwalan.ievent;
 import org.prajwalan.app.prajwalan.principal;
 import org.prajwalan.app.prajwalan.socialcontest;
 import org.prajwalan.app.prajwalan.sponsor_main;
 import org.prajwalan.app.prajwalan.staff;
+import org.prajwalan.app.prajwalan.ThemeSongs;
+import org.prajwalan.app.prajwalan.tedx;
 import org.prajwalan.app.prajwalan.tweek;
 
 import java.text.SimpleDateFormat;
@@ -66,11 +68,11 @@ public class NavigationDrawrerHandler {
             case R.id.nav_contest :             i = new Intent(context, socialcontest.class);
                                                 context.startActivity(i);
                                                 break;
-            /*case R.id.nav_myidea :              i = new Intent(context, ievent.class);
+            case R.id.nav_myidea :              i = new Intent(context, ievent.class);
                                                 context.startActivity(i);
-                                                break;*/
+                                                break;
 
-            case R.id.nav_music :             i = new Intent(context, music.class);
+            case R.id.nav_theme_song :             i = new Intent(context, ThemeSongs.class);
                                                 context.startActivity(i);
                                                  break;
             case R.id.nav_shirt :               i = new Intent(context, Tshirt.class);
@@ -98,6 +100,9 @@ public class NavigationDrawrerHandler {
                                                 context.startActivity(i);
                                                 break;
             case R.id.nav_sponsors :             i = new Intent(context, sponsor_main.class);
+                                                context.startActivity(i);
+                                                 break;
+            case R.id.nav_tedx :             i = new Intent(context, tedx.class);
                                                 context.startActivity(i);
                                                  break;
             case R.id.nav_pcup :                i = new Intent(context, staff.class);
@@ -216,7 +221,7 @@ public class NavigationDrawrerHandler {
         tv.setTypeface(face);
         tv = (TextView) headerView.findViewById(R.id.nav_events);
         tv.setTypeface(face);
-        tv = (TextView) headerView.findViewById(R.id.nav_music);
+        tv = (TextView) headerView.findViewById(R.id.nav_theme_song);
         tv.setTypeface(face);
         tv = (TextView) headerView.findViewById(R.id.nav_Workshop);
         tv.setTypeface(face);
@@ -237,6 +242,8 @@ public class NavigationDrawrerHandler {
         tv = (TextView) headerView.findViewById(R.id.nav_about);
         tv.setTypeface(face);
         tv = (TextView) headerView.findViewById(R.id.nav_contact);
+        tv.setTypeface(face);
+        tv = (TextView) headerView.findViewById(R.id.nav_tedx);
         tv.setTypeface(face);
         tv = (TextView) headerView.findViewById(R.id.nav_hospitality);
         tv.setTypeface(face);

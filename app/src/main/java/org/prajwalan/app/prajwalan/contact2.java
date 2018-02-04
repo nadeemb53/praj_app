@@ -97,7 +97,7 @@ public class contact2 extends AppCompatActivity
             text.setText("Core Designing");
         }
         else  if(cmtname.equalsIgnoreCase("coreediting")) {
-            iv.setBackground(getResources().getDrawable(R.drawable.coreeditting));
+            iv.setBackground(getResources().getDrawable(R.drawable.coreediting));
 
             text.setText("Core Editing");
         }

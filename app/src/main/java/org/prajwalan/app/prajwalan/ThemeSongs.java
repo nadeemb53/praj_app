@@ -2,35 +2,40 @@ package org.prajwalan.app.prajwalan;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
-import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.prajwalan.app.prajwalan.handlers.NavigationDrawrerHandler;
 
-public class developer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+//import org.prajwalan.app.prajwalanapp.R;
+
+public class ThemeSongs extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
 
     public TextView timers,name;
     public Handler handler,hand1;
     public Runnable runnable,run1;
     private View headerView;
-    AnimatorSet se;
 
+    WebView webview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_developer);
+        setContentView(R.layout.activity_theme_songs);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,67 +60,29 @@ public class developer extends AppCompatActivity implements NavigationView.OnNav
         set.setTarget(logo);
         set.start();
         Typeface face=Typeface.createFromAsset(getAssets(), "fonts/sf.ttf");
-        /*TextView tv = (TextView) findViewById(R.id.moizt);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.moizn);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.moize);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.moiza);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.app1);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nilesht);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nileshe);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nileshn);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.shubhamt);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.shubhame);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.shubhamn);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nidhit);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nidhie);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.nidhin);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.widhit);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.widhin);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.widhie);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.app2);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.dushyantt);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.dushyantn);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.dushyante);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.ameyt);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.ameye);
-        tv.setTypeface(face);
-        tv = (TextView) findViewById(R.id.ameyn);
-        tv.setTypeface(face);*/
 
+        webview = (WebView) findViewById(R.id.web_view);
+        WebSettings webSettings = webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webview.loadUrl("http://prajwalan.org/2017/parindey.html");
+        webview.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url){
+                view.loadUrl(url);
+                return true;
+            }
+        });
 
     }
 
+
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
+        if(webview.canGoBack()){
+            webview.goBack();
+        }
+        else{
             super.onBackPressed();
-            startActivity(new Intent(this, MainActivity.class));
-            finish();
         }
     }
 
@@ -134,10 +101,11 @@ public class developer extends AppCompatActivity implements NavigationView.OnNav
         NavigationDrawrerHandler.processNavigationDrawer(headerView, getApplicationContext());
     }
     public  boolean  navigation(View d) {
-        if(d.getId() != R.id.nav_developer)
+        if(d.getId() != R.id.nav_theme_song)
             NavigationDrawrerHandler.navigation(this,d,headerView);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
+

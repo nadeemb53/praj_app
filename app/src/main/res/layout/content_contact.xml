@@ -182,7 +182,7 @@
                 android:layout_weight="1"
                 android:id="@+id/e13"
                 android:onClick="cont"
-                android:background="@drawable/coreediting"
+                android:background="@drawable/coreediting1"
                 android:layout_below="@+id/e7"
                 android:layout_marginTop="16dp"/>
 

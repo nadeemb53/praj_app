@@ -76,26 +76,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Amusement"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Coding"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Conferal"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Pardigm"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Robotics"
             android:label=""
             android:screenOrientation="portrait"
@@ -188,7 +168,7 @@
 
         <service
             android:name=".FirebaseDispatcher.DatabaseUpdateIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
         <service
             android:name=".FirebaseDispatcher.KCTFirebaseJobService"
             android:exported="false">
@@ -198,9 +178,12 @@
         </service>
 
         <activity
-            android:name=".music"
-            android:label="@string/title_activity_music"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".ThemeSongs"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tedx"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

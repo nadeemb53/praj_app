@@ -94,7 +94,7 @@
 		$date = date($_POST['lastdate']);
 	}
 	else {
-		$date = date('2015-12-30');
+		$date = date('2018-01-30');
 	}
 
 	echo "{";
