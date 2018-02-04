@@ -46,6 +46,11 @@ import java.util.Date;
  */
 public class NavigationDrawrerHandler {
 
+    public void tedx(Context context,View view){
+        Intent intent = new Intent(context , tedx.class);
+        context.startActivity(intent);
+
+    }
     public static boolean  navigation(Context context,View d,View headerView) {
         Intent i;
 
@@ -102,7 +107,7 @@ public class NavigationDrawrerHandler {
             case R.id.nav_sponsors :             i = new Intent(context, sponsor_main.class);
                                                 context.startActivity(i);
                                                  break;
-            case R.id.nav_tedx :             i = new Intent(context, tedx.class);
+            case R.id.nav_tedx :                i = new Intent(context, tedx.class);
                                                 context.startActivity(i);
                                                  break;
             case R.id.nav_pcup :                i = new Intent(context, staff.class);
