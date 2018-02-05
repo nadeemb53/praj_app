@@ -52,7 +52,7 @@
                     android:textAlignment="textStart"
                     />-->
                 <ImageView
-                    android:layout_width="77dp"
+                    android:layout_width="62dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/inlogo"
                     android:paddingTop="5dp"
@@ -78,12 +78,12 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:paddingTop="20dp"
-                                android:paddingLeft="10dp"
+                                android:paddingTop="35dp"
+                                android:paddingLeft="4dp"
                                 android:layout_height="100dp"
                                 android:fontFamily="sans-serif"
                                 android:text="Prajwalan"
-                                android:textSize="50dp"
+                                android:textSize="36dp"
                                 android:typeface="monospace" />
                             <!--<TextView
                                 android:layout_width="wrap_content"

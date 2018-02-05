@@ -185,7 +185,8 @@
             android:name=".tedx"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".junior"></activity>
+        <activity android:name=".junior" />
+        <activity android:name=".sponsors2018"></activity>
     </application>
 
 </manifest>

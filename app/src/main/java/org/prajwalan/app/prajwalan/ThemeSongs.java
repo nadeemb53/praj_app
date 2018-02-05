@@ -68,7 +68,7 @@ public class ThemeSongs extends AppCompatActivity implements NavigationView.OnNa
         webview = (WebView) findViewById(R.id.web_view);
         WebSettings webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webview.loadUrl("http://prajwalan.org/2017/parindey.html");
+        webview.loadUrl("http://prajwalan.org/parindey.html");
         webview.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url){

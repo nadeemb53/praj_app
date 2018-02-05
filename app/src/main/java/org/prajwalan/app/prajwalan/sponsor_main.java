@@ -92,6 +92,12 @@ public class sponsor_main extends AppCompatActivity
             //Toast.makeText(getBaseContext(),"20117", Toast.LENGTH_LONG).show();
             startActivity(i);
         }
+        if (d.getId()==R.id.sp2018){
+            // Toast.makeText(getBaseContext(),"Previoew 20117", Toast.LENGTH_LONG).show();
+            i = new Intent(this,sponsors2018.class);
+            //Toast.makeText(getBaseContext(),"20117", Toast.LENGTH_LONG).show();
+            startActivity(i);
+        }
 
     }
 
