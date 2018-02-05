@@ -46,11 +46,18 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                <!--<ImageView android:layout_width="50dp" android:layout_height="50dp"
                     android:paddingTop="0dp"
                     android:src="@drawable/grpicon" android:id="@+id/imageView"
                     android:textAlignment="textStart"
-                    />
+                    />-->
+                <ImageView
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/inlogo"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/img_eve"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -62,12 +69,23 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:id="@+id/loggedInLayout">
+
                         <LinearLayout
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
                             <TextView
+                                android:layout_width="match_parent"
+                                android:paddingTop="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="100dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Prajwalan"
+                                android:textSize="50dp"
+                                android:typeface="monospace" />
+                            <!--<TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Name "
@@ -87,7 +105,7 @@
                                 android:singleLine="true"
                                 android:textAlignment="center"
                                 android:id="@+id/lastname"
-                                />
+                                />-->
 
 
                         </LinearLayout>
@@ -99,7 +117,7 @@
                             android:textColor="#eeeeee"
                             android:id="@+id/email"
                             android:textAlignment="textEnd"/>-->
-                        <TextView
+                       <!-- <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="40dp"
@@ -110,7 +128,7 @@
                             android:textColor="#eeeeee"
                             android:id="@+id/logout"
                             android:onClick="navigation"
-                            android:textAlignment="textEnd"/>
+                            android:textAlignment="textEnd"/>-->
                     </LinearLayout>
 
                     <LinearLayout
@@ -119,7 +137,7 @@
                         android:id="@+id/notLoggedInLayout"
                         android:weightSum="1">
 
-                        <TextView
+                        <!--<TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Login/Signup"
@@ -129,7 +147,7 @@
                             android:id="@+id/login"
                             android:layout_gravity="start"
                             android:onClick="navigation"
-                            android:textAlignment="textEnd"/>
+                            android:textAlignment="textEnd"/>-->
                         <!--<ImageButton
 
                             android:layout_width="40dp"
@@ -445,6 +463,33 @@
                     android:layout_gravity="center"
                     android:layout_weight="2"
                     android:id="@+id/nav_pcup"
+                    android:textColor="#eeeeee"
+                    android:background="@drawable/active_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="3dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/pcupi"
+                    android:onClick="navigation"
+                    android:id="@+id/inav_jrpcup"
+                    android:layout_gravity="start"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="navigation"
+                    android:text="Junior Prajwalan Cup"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/nav_jrpcup"
                     android:textColor="#eeeeee"
                     android:background="@drawable/active_background"/>
             </LinearLayout>

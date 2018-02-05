@@ -148,22 +148,51 @@ public class ievent extends AppCompatActivity
     {
         Intent i=null;
 
-         if(v.getId()==R.id.boxcricket)
+         if(v.getId()==R.id.equitz)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","boxcricket");
+            abc.putString("eventid","equitz");
             i.putExtras(abc);
             startActivity(i);
         }
-        else if(v.getId()==R.id.mystryhunt)
+        else if(v.getId()==R.id.letstalk)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","mystryhunt");
+            abc.putString("eventid","letstalk");
             i.putExtras(abc);
             startActivity(i);
         }
+         else if(v.getId()==R.id.techshetra)
+         {
+             i=new Intent(this,Robosoccer.class);
+             Bundle abc=new Bundle();
+             abc.putString("eventid","techshetra");
+             i.putExtras(abc);
+             startActivity(i);
+         }else if(v.getId()==R.id.smartcity)
+         {
+             i=new Intent(this,Robosoccer.class);
+             Bundle abc=new Bundle();
+             abc.putString("eventid","smartcity");
+             i.putExtras(abc);
+             startActivity(i);
+         }else if(v.getId()==R.id.editmania)
+         {
+             i=new Intent(this,Robosoccer.class);
+             Bundle abc=new Bundle();
+             abc.putString("eventid","editmania");
+             i.putExtras(abc);
+             startActivity(i);
+         }else if(v.getId()==R.id.iplauction)
+         {
+             i=new Intent(this,Robosoccer.class);
+             Bundle abc=new Bundle();
+             abc.putString("eventid","iplauction");
+             i.putExtras(abc);
+             startActivity(i);
+         }
 
     }
 

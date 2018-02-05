@@ -22,7 +22,7 @@ import android.widget.TextView;
 import org.prajwalan.app.prajwalan.handlers.NavigationDrawrerHandler;
 
 public class Robotics extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, Animation.AnimationListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
     public TextView timers;
     public Handler handler;
     public Runnable runnable;
@@ -51,7 +51,7 @@ public class Robotics extends AppCompatActivity
 
 
 
-       animation1 = AnimationUtils.loadAnimation(this, R.anim.card_flip_left_out);
+     /*  animation1 = AnimationUtils.loadAnimation(this, R.anim.card_flip_left_out);
         animation1.setAnimationListener(this);
         animation2 = AnimationUtils.loadAnimation(this, R.anim.card_flip_left_in);
         animation2.setAnimationListener(this);
@@ -84,7 +84,7 @@ public class Robotics extends AppCompatActivity
 
         img3=(ImageView) findViewById(R.id.sumowrestling);
         img3.setImageResource(R.drawable.sumowrestling);
-
+*/
 
 
 
@@ -115,27 +115,27 @@ public class Robotics extends AppCompatActivity
             i.putExtras(abc);
             startActivity(i);
         }
-        else if(v.getId()==R.id.sumowrestling)
+        else if(v.getId()==R.id.robowrestling)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","sumowrestling");
+            abc.putString("eventid","robowrestling");
             i.putExtras(abc);
             startActivity(i);
         }
-        else if(v.getId()==R.id.mazesolver)
+        else if(v.getId()==R.id.robosoccer)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","mazesolver");
+            abc.putString("eventid","robosoccer");
             i.putExtras(abc);
             startActivity(i);
         }
-        else if(v.getId()==R.id.linefollower)
+        else if(v.getId()==R.id.myrobomyexpo)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","linefollower");
+            abc.putString("eventid","myrobomyexpo");
             i.putExtras(abc);
             startActivity(i);
         }
@@ -143,7 +143,7 @@ public class Robotics extends AppCompatActivity
 
     }
 
-    @Override
+   /* @Override
     public void onAnimationStart(Animation animation) {
         
     }
@@ -314,7 +314,7 @@ public class Robotics extends AppCompatActivity
     @Override
     public void onAnimationRepeat(Animation animation) {
 
-    }
+    }*/
 
     @Override
     public void onBackPressed() {

@@ -1,5 +1,7 @@
 package org.prajwalan.app.prajwalan.handlers;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
@@ -9,7 +11,10 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.design.widget.NavigationView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +35,7 @@ import org.prajwalan.app.prajwalan.Tshirt;
 import org.prajwalan.app.prajwalan.developer;
 
 import org.prajwalan.app.prajwalan.ievent;
+import org.prajwalan.app.prajwalan.junior;
 import org.prajwalan.app.prajwalan.principal;
 import org.prajwalan.app.prajwalan.socialcontest;
 import org.prajwalan.app.prajwalan.sponsor_main;
@@ -44,13 +50,14 @@ import java.util.Date;
 /**
  * Created by nadeem on 26/01/2018.
  */
-public class NavigationDrawrerHandler {
+public class NavigationDrawrerHandler extends AppCompatActivity {
 
     public void tedx(Context context,View view){
         Intent intent = new Intent(context , tedx.class);
         context.startActivity(intent);
 
     }
+
     public static boolean  navigation(Context context,View d,View headerView) {
         Intent i;
 
@@ -113,6 +120,9 @@ public class NavigationDrawrerHandler {
             case R.id.nav_pcup :                i = new Intent(context, staff.class);
                                                 context.startActivity(i);
                                                 break;
+            case R.id.nav_jrpcup :                i = new Intent(context, junior.class);
+                                                context.startActivity(i);
+                                                 break;
             case R.id.nav_developer :           i = new Intent(context, developer.class);
                                                 context.startActivity(i);
                                                 break;
@@ -171,18 +181,14 @@ public class NavigationDrawrerHandler {
                 i.setData(Uri.parse(url));
                 context.startActivity(i);
                 break;
-            case R.id.login :                   i = new Intent(context, Register_Activity.class);
-                                                context.startActivity(i);
-                                                break;
-            case R.id.logout :                  logout(context,headerView);
-                                                break;
+
         }
 
         return true;
     }
 
     public static void processNavigationDrawer(View headerView, Context c) {
-        setLoginHeaderData(headerView,c);
+      /*  setLoginHeaderData(headerView,c);*/
         startCountDown(headerView);
         setCustomFont(headerView, c);
     }
@@ -260,9 +266,11 @@ public class NavigationDrawrerHandler {
         tv.setTypeface(face);
         tv = (TextView) headerView.findViewById(R.id.nav_pcup);
         tv.setTypeface(face);
+        tv = (TextView) headerView.findViewById(R.id.nav_jrpcup);
+        tv.setTypeface(face);
     }
 
-    private static void setLoginHeaderData(View headerView,Context c) {
+  /*  private static void setLoginHeaderData(View headerView,Context c) {
 
         LinearLayout notLoggedInLayout = (LinearLayout) headerView.findViewById(R.id.notLoggedInLayout);
         LinearLayout loggedInLayout = (LinearLayout) headerView.findViewById(R.id.loggedInLayout);
@@ -305,5 +313,5 @@ public class NavigationDrawrerHandler {
         AlertDialog alertDialog = alertBuilder.create();
         alertDialog.setTitle("Confirm ?");
         alertDialog.show();
-    }
+    }*/
 }

@@ -181,9 +181,11 @@
             android:name=".ThemeSongs"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".tedx"
+        <activity
+            android:name=".tedx"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".junior"></activity>
     </application>
 
 </manifest>

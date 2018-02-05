@@ -29,9 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/mazesolver"
+                android:background="@drawable/robowrestling"
                 android:onClick="robotics"
-                android:id="@+id/mazesolver"/>
+                android:id="@+id/robowrestling"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,16 +42,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/sumowrestling"
+                android:background="@drawable/robosoccer"
                 android:onClick="robotics"
-                android:id="@+id/sumowrestling"/>
+                android:id="@+id/robosoccer"/>
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/linefollower"
+                android:background="@drawable/myrobomyexpo"
                 android:onClick="robotics"
-                android:id="@+id/linefollower"/>
+                android:id="@+id/myrobomyexpo"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,14 +61,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/five"
+                android:background="@drawable/left"
                 />
+
             <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/six"
-               />
+                android:background="@drawable/right" />
 
         </LinearLayout>
     </LinearLayout>
