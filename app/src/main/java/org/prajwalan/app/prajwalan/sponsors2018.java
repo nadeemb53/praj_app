@@ -17,7 +17,7 @@ public class sponsors2018 extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(R.layout.app_bar_sponsors_2018);
+                setContentView(R.layout.activity_sponsors2018);
                /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                 setSupportActionBar(toolbar);
 

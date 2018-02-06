@@ -29,9 +29,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/robowrestling"
+                android:background="@drawable/robosoccer"
                 android:onClick="robotics"
-                android:id="@+id/robowrestling"/>
+                android:id="@+id/robosoccer"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,9 +43,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/robosoccer"
+                android:background="@drawable/robowrestling"
                 android:onClick="robotics"
-                android:id="@+id/robosoccer"/>
+                android:id="@+id/robowrestling"/>
+
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
