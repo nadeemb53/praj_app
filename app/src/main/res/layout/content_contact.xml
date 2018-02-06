@@ -215,7 +215,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/e8"
+                android:id="@+id/e14"
                 android:onClick="cont"
                 android:background="@drawable/networking11"
                 android:layout_below="@+id/e10"

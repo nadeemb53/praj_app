@@ -426,28 +426,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
                 android:background="#a9a6a6"/>
-            <TextView
+            <!--<TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pizza Partner"
                 android:textColor="#FFF"
                 android:textSize="25dp"
                 android:id="@+id/sp5"
-                android:textAlignment="center"/>
-            <View
+                android:textAlignment="center"/>-->
+            <!--<View
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
-                android:background="#a9a6a6"/>
+                android:background="#a9a6a6"/>-->
             <!--<ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/domino"
                 android:layout_gravity="center"
-                android:padding="8dp"/>-->
+                android:padding="8dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
-                android:background="#a9a6a6"/>
+                android:background="#a9a6a6"/>-->
 
 
 

@@ -356,7 +356,7 @@ public class Events extends AppCompatActivity
     }
     else if(v.getId()==R.id.myideamyevent)
     {
-        i=new Intent(this,Robosoccer.class);
+        i=new Intent(this,ievent.class);
         Bundle abc=new Bundle();
         abc.putString("eventid","myideamyevent");
         i.putExtras(abc);

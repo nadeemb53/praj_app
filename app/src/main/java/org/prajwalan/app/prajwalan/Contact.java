@@ -136,7 +136,7 @@ public class Contact extends AppCompatActivity
             i.putExtras(abc);
             startActivity(i);
         }
-        else if (d.getId()==R.id.e8){
+        else if (d.getId()==R.id.e14){
             i=new Intent(this,contact2.class);
             Bundle abc=new Bundle();
             abc.putString("cmtname","networking");

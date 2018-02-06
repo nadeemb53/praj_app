@@ -89,7 +89,7 @@ public class contact2 extends AppCompatActivity
         }else  if(cmtname.equalsIgnoreCase("alumnisponsorship")) {
             iv.setBackground(getResources().getDrawable(R.drawable.alumini1));
 
-            text.setText("ALUMINI SPONSORSHIP");
+            text.setText("ALUMNI SPONSORSHIP");
         }
         else  if(cmtname.equalsIgnoreCase("coredesigning")) {
             iv.setBackground(getResources().getDrawable(R.drawable.coredes1));
