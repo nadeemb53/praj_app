@@ -13,17 +13,250 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".tweek"
     tools:showIn="@layout/app_bar_tweek">
+
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+
         android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Coming Soon"
-            android:textColor="#f6f6f6"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textSize="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="TECH-WEEK  started in Prajwalan'15, is an initiative under which students are provided guidance by hosting free workshops on various software that are required in various disciplines.These workshops are conducted by senior students expert in that respective field. It has something to offer each and every student from the college.
+
+    So, Budding technocrats brace yourself and get ready for some exciting learning experience!\n\nDate: 12 Feb - 16 Feb 2018\n"
+                android:textAlignment="center"
+                android:textColor="#f6f6f6"
+                android:textSize="22dp"
+                android:id="@+id/textView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                     android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12th Feb"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13th Feb"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14th Feb"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15th Feb"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="16th Feb"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Workshop"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Web Designing"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aduino"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ANSYS-CFD"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AutoCAD"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MATLAB"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#ffffff"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+
 
 
 
@@ -178,7 +411,7 @@
 
 
         </LinearLayout>-->
-    </ScrollView>
+
 
 </RelativeLayout>
 

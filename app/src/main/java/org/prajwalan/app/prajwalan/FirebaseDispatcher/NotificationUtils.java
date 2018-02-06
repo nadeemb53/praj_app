@@ -37,7 +37,7 @@ public class NotificationUtils {
                 .setSmallIcon(R.drawable.logo)
                 .setLargeIcon(largeIcon(context))
                 .setContentTitle("PRAJWALAN")
-                .setContentText("Hurry up...only "+days+" days ramaining...")
+                .setContentText("Hurry up! Only "+days+" days remaining.")
                 .setStyle(new NotificationCompat.BigTextStyle().bigText("Prajwalan"))
                // .setDefaults(Notification.DEFAULT_SOUND)
                 .setContentIntent(contentIntent(context))

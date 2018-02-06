@@ -46,7 +46,7 @@ public class BackgroundTask{
         }
         NotificationUtils.remainderNotification(context , String.valueOf(days));
 
-        sleep(1000*60);
+     /*   sleep(1000*60);
         DBUpdates[] updates;
         try {
             SQLiteDbHandler db = new SQLiteDbHandler(context);
@@ -70,6 +70,7 @@ public class BackgroundTask{
 
             return;
         }
+        */
 
     }
 
