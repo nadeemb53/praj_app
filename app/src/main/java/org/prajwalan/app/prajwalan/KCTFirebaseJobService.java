@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.prajwalan.app.prajwalan.FirebaseDispatcher;
+package org.prajwalan.app.prajwalan;
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 
 import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
@@ -31,14 +32,16 @@ public class KCTFirebaseJobService extends JobService {
     @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     public boolean onStartJob(final JobParameters jobParameters) {
-
+        Log.d("kct :" ,"success");
         mBackgroundTask = new AsyncTask() {
+
 
             @Override
             protected Object doInBackground(Object[] params) {
                 Context context = KCTFirebaseJobService.this;
                 try {
                     BackgroundTask.executeTask(context, BackgroundTask.ACTION_IN_BACKGROUND);
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

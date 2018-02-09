@@ -121,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#FFFFFF"
 
-                    android:text="from 6.00 pm onwards"
+                    android:text="Anytime"
                     android:textSize="15dp"/>
 
 
@@ -145,7 +145,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#FFFFFF"
 
-                    android:text=" up to 6.00 pm on next day after check in."
+                    android:text="Anytime"
                     android:textSize="15dp"/>
             </LinearLayout>
             <TextView

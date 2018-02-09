@@ -29,13 +29,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 //import com.pushwizard.sdk.*;
 
-import org.prajwalan.app.prajwalan.DB.DBContacts;
-import org.prajwalan.app.prajwalan.FirebaseDispatcher.BackgroundTasksUtilities;
 import org.prajwalan.app.prajwalan.handlers.NavigationDrawrerHandler;
 import org.prajwalan.app.prajwalan.DB.DBUpdates;
 import org.prajwalan.app.prajwalan.handlers.SQLiteDbHandler;

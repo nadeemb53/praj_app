@@ -1,7 +1,6 @@
-package org.prajwalan.app.prajwalan.FirebaseDispatcher;
+package org.prajwalan.app.prajwalan;
 
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
 
 import org.prajwalan.app.prajwalan.DB.DBUpdates;
@@ -22,11 +21,12 @@ public class BackgroundTask{
 
     public static String ACTION_IN_BACKGROUND = "background-activity";
     public static String TAG = "TAG!";
-    public static int PRAJWALAN_DAY = 24 ;
+    public static int PRAJWALAN_DAY = 27 ;
     public static String PRAJWALAN_MONTH = "FEB" ;
 
     public static void executeTask(Context context, String action) throws InterruptedException {
 
+        Log.d("task","success");
         DateFormat d = new SimpleDateFormat("d");
         DateFormat m = new SimpleDateFormat("MMM");
         String day = d.format(Calendar.getInstance().getTime());
@@ -46,7 +46,7 @@ public class BackgroundTask{
         }
         NotificationUtils.remainderNotification(context , String.valueOf(days));
 
-     /*   sleep(1000*60);
+    /*   sleep(1000*60);
         DBUpdates[] updates;
         try {
             SQLiteDbHandler db = new SQLiteDbHandler(context);
@@ -69,8 +69,8 @@ public class BackgroundTask{
         } catch (Exception e) {
 
             return;
-        }
-        */
+        }*/
+
 
     }
 

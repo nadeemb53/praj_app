@@ -1,6 +1,7 @@
-package org.prajwalan.app.prajwalan.FirebaseDispatcher;
+package org.prajwalan.app.prajwalan;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.firebase.jobdispatcher.Constraint;
 import com.firebase.jobdispatcher.FirebaseJobDispatcher;
@@ -28,7 +29,8 @@ public class BackgroundTasksUtilities {
 
     synchronized public static void scheduleForegroundServices( final Context context){
 
-        if(initiate) return;;
+        Log.d("call :" ,"success");
+        if(initiate) return;
 
         GooglePlayDriver driver = new GooglePlayDriver(context);
         FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(driver);
@@ -40,11 +42,12 @@ public class BackgroundTasksUtilities {
                 .setConstraints(Constraint.ON_UNMETERED_NETWORK)
                 .setLifetime(Lifetime.FOREVER)
                 .setRecurring(true)
-                .setTrigger(Trigger.executionWindow(0,60))
+                .setTrigger(Trigger.executionWindow(0,60*60))
                 .setReplaceCurrent(true)
                 .build();
 
-        dispatcher.schedule(constraintJob);
+        dispatcher.mustSchedule(constraintJob);
+
         initiate = true;
     }
 

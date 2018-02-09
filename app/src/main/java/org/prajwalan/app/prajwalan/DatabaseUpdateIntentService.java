@@ -1,4 +1,4 @@
-package org.prajwalan.app.prajwalan.FirebaseDispatcher;
+package org.prajwalan.app.prajwalan;
 
 import android.app.IntentService;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package org.prajwalan.app.prajwalan.FirebaseDispatcher;
+package org.prajwalan.app.prajwalan;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -34,12 +34,12 @@ public class NotificationUtils {
         NotificationCompat.Builder notificationBuilder = new
                 NotificationCompat.Builder(context)
                 .setColor(ContextCompat.getColor(context, R.color.colorPrimary))
-                .setSmallIcon(R.drawable.logo)
+                .setSmallIcon(R.drawable.logo1)
                 .setLargeIcon(largeIcon(context))
                 .setContentTitle("PRAJWALAN")
                 .setContentText("Hurry up! Only "+days+" days remaining.")
                 .setStyle(new NotificationCompat.BigTextStyle().bigText("Prajwalan"))
-               // .setDefaults(Notification.DEFAULT_SOUND)
+                .setDefaults(Notification.DEFAULT_SOUND)
                 .setContentIntent(contentIntent(context))
                 .setAutoCancel(false);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
@@ -56,7 +56,7 @@ public class NotificationUtils {
         NotificationCompat.Builder notificationBuilder = new
                 NotificationCompat.Builder(context)
                 .setColor(ContextCompat.getColor(context, R.color.colorPrimary))
-                .setSmallIcon(R.drawable.logo)
+                .setSmallIcon(R.drawable.logo1)
                 .setLargeIcon(largeIcon(context))
                 .setContentTitle("PRAJWALAN UPDATE")
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(days))
@@ -83,7 +83,7 @@ public class NotificationUtils {
 
     private static Bitmap largeIcon(Context context){
         Resources resources = context.getResources();
-        Bitmap largeIcon = BitmapFactory.decodeResource(resources, R.drawable.logo);
+        Bitmap largeIcon = BitmapFactory.decodeResource(resources, R.drawable.logo1);
         return largeIcon;
     }
     public String getTitle(){

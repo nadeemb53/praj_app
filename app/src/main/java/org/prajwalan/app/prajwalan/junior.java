@@ -20,9 +20,9 @@ public class junior extends AppCompatActivity {
 
         if(v.getId()==R.id.jrrobotics)
         {
-            i=new Intent(this,Robotics.class);
+            i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","robotics");
+            abc.putString("eventid","jrrobotics");
             i.putExtras(abc);
             startActivity(i);
         }
@@ -30,7 +30,7 @@ public class junior extends AppCompatActivity {
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","chanakya");
+            abc.putString("eventid","jrchanakya");
             i.putExtras(abc);
             startActivity(i);
         }
@@ -38,28 +38,28 @@ public class junior extends AppCompatActivity {
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","modelexhibition");
+            abc.putString("eventid","jrmodelexhibition");
             i.putExtras(abc);
             startActivity(i);
         }else if(v.getId()==R.id.jrletstalk)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","letstalk");
+            abc.putString("eventid","jrletstalk");
             i.putExtras(abc);
             startActivity(i);
         }else if(v.getId()==R.id.jrrubicscube)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","rubicscube");
+            abc.putString("eventid","jrrubicscube");
             i.putExtras(abc);
             startActivity(i);
         }else if(v.getId()==R.id.jrangrybirds)
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","angrybirds");
+            abc.putString("eventid","jrangrybirds");
             i.putExtras(abc);
             startActivity(i);
         }
@@ -67,7 +67,7 @@ public class junior extends AppCompatActivity {
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","boxcricket");
+            abc.putString("eventid","jrboxcricket");
             i.putExtras(abc);
             startActivity(i);
         }
@@ -75,7 +75,7 @@ public class junior extends AppCompatActivity {
         {
             i=new Intent(this,Robosoccer.class);
             Bundle abc=new Bundle();
-            abc.putString("eventid","lanbattle");
+            abc.putString("eventid","jrlanbattle");
             i.putExtras(abc);
             startActivity(i);
         }
